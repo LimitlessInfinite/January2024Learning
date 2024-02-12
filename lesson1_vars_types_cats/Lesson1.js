@@ -62,8 +62,21 @@ console.log(person)
 console.log("-".repeat(20))
     /*
 
-- За допомогою оператора typeof визначити типи наступних змінних та вивести їх в консоль.
+3) - За допомогою оператора typeof визначити типи наступних змінних та вивести їх в консоль.
   let a = 100; let b = '100'; let c = true;
+
+  */
+let a = 100;
+let b = "100";
+let c = true;
+
+console.log(typeof a)
+console.log(typeof b)
+console.log(typeof c)
+
+console.log("-".repeat(20))
+
+/*
 
 Додаткове для тих хто цікавився prompt`oм
 - За допомогою 3х різних prompt() отримати 3 слова які являються вашими Імям,
