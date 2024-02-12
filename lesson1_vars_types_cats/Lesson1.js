@@ -1,5 +1,5 @@
 /*
-- Створити змінні. Присвоїти кожному з них значення: 'hello','owu','com',
+1) - Створити змінні. Присвоїти кожному з них значення: 'hello','owu','com',
 'ua', 1, 10, -999, 123, 3.14, 2.7, 16, true, false.
 Вивести кожну змінну за допомогою: console.log
 */
@@ -42,8 +42,25 @@ console.log(testArray)
 console.log("Length of test array = " + testArray.length)
 /*
 
-- Створити 3 змінних firstName, middleName, lastName, наповнити їх своїм ПІБ.
+2) - Створити 3 змінних firstName, middleName, lastName, наповнити їх своїм ПІБ.
 З'єднати їх в одну змінну person (Не об'єкт, просто за допомоги конкатенації)
+*/
+const firstName = "Bohdan "
+const middleName = "Olegovich "
+const lastName = "Pekar"
+
+const person = firstName.concat(middleName, lastName)
+
+console.log("-".repeat(20))
+
+console.log(firstName)
+console.log(middleName)
+console.log(lastName)
+
+console.log(person)
+
+console.log("-".repeat(20))
+    /*
 
 - За допомогою оператора typeof визначити типи наступних змінних та вивести їх в консоль.
   let a = 100; let b = '100'; let c = true;
