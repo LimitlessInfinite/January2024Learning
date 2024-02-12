@@ -78,9 +78,17 @@ console.log("-".repeat(20))
 
 /*
 
-Додаткове для тих хто цікавився prompt`oм
+4) Додаткове для тих хто цікавився prompt`oм
 - За допомогою 3х різних prompt() отримати 3 слова які являються вашими Імям,
 По-Батькові та роками. та вивести в консоль
  */
+
+
+
+let testPromptFirstName = prompt("Enter your first name")
+let testPromptLastName = prompt("Enter your last name")
+let age = prompt("Enter your age")
+
+console.log(testPromptFirstName + " " + testPromptLastName + " " + age)
 
 console.log("Hello world, test!")
