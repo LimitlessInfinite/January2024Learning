@@ -30,9 +30,22 @@ arrayObject2.forEach(element => console.log(element))
 /*
 4) - Створити масив з 10 об'єктами які описують сутніть "користувач".
 Поля: name, username,password. Вивести в консоль пароль кожного користувача
-
-
 */
+const arrayObject3 = [
+    {name:"John",username:"John1337",password:"32vdsv43fd"},
+    {name:"Lenny",username:"LennyBigBoy",password:"43gfxbfxdbd"},
+    {name:"David",username:"DavidCool11",password:"3vxcbdsage"},
+    {name:"Nicolas",username:"Kage2004",password:"9dhjabsfd"},
+    {name:"Ron",username:"Ronald1999",password:"lmdsfsfd"},
+    {name:"Gunter",username:"MasculinityMen",password:"kdsjsdjhsd"},
+    {name:"Kirk",username:"KrusaderAveGod",password:"skfjwefw"},
+    {name:"Valentine",username:"BlessingSince0",password:"9hfish323"},
+    {name:"Paul",username:"GendalfTheBest",password:"7fhd63hsd"},
+    {name:"Duncan",username:"McLoud))",password:"hfshfbvs"},
+];
+
+arrayObject3.forEach(element => console.log(element.password))
+
 /*
 Логічні розгалуження:
 5) - Є змінна х, якій ви надаєте довільне числове значення.
