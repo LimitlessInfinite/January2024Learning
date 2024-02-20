@@ -8,6 +8,13 @@ array.forEach(element => console.log(element))
 console.log(array.length)
 /*
 2) - Створити 3 об'єкти які описують книги. Поля об'єкту : title ,pageCount, genre.
+*/
+const arrayObject = [
+    {title:"The Witcher",pageCount:235,genre:"fantasy"},
+    {title:"Sword of Destiny",pageCount: 384,genre:"fantasy"},
+    {title:"The Last Wish",pageCount:288,genre:"fantasy"}];
+arrayObject.forEach(element => console.log(element))
+/*
 3) - Створити 3 об'єкти які описують книги. Поля об'єкту : title ,pageCount, genre, authors.
  Поле "автори" - являється  масивом. Кожен автор має поля name та age.
 4) - Створити масив з 10 об'єктами які описують сутніть "користувач".
