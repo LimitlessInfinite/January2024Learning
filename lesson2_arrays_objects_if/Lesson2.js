@@ -17,6 +17,17 @@ arrayObject.forEach(element => console.log(element))
 /*
 3) - Створити 3 об'єкти які описують книги. Поля об'єкту : title ,pageCount, genre, authors.
  Поле "автори" - являється  масивом. Кожен автор має поля name та age.
+ */
+const arrayObject2 = [
+    {title:"Blood of Elves",pageCount:320,genre:"fantasy",authors: [{name:"Andrzej Sapkowski",age:75}]},
+    {title:"Time of Contempt",pageCount:331,genre:"fantasy",authors:[{name:"Andrzej Sapkowski",age:75}]},
+    {title:"Baptism of Fire",pageCount:343,genre:"fantasy",authors: [{name:"Andrzej Sapkowski",age:75}]}
+];
+
+arrayObject2.forEach(element => console.log(element))
+
+
+/*
 4) - Створити масив з 10 об'єктами які описують сутніть "користувач".
 Поля: name, username,password. Вивести в консоль пароль кожного користувача
 
