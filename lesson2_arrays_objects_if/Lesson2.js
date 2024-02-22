@@ -136,6 +136,25 @@ switch (dayOfWeek) {
 8.2  - Користувач вводить або має два числа.
         Потрібно знайти та вивести максимальне число з тих двох .
         Також потрібно врахувати коли введені рівні числа.
+        */
+
+let number1 = prompt("Enter the first number")
+let number2 = prompt("Enter the second number")
+if (!Number.isInteger(parseInt(number1)) || !Number.isInteger(parseInt(number2))) {
+    alert("Incorrect format, enter only integers")
+}
+else if (parseInt(number1) > parseInt(number2)) {
+    alert("First number (" + number1 + ") is bigger than second number (" + number2 + ")")
+}
+else if (parseInt(number2) > parseInt(number1)) {
+    alert("Second number (" + number2 + ") is bigger than first number (" + number1 + ")")
+}
+else if (parseInt(number2) === parseInt(number1)) {
+    alert("Numbers equals")
+}
+
+
+/*
 
 8.3 - є змінна х, яка може прийняти будь-яке значення
 (стрінг, число, undefined, null  і тд включно). Напишіть код який,
