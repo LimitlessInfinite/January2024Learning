@@ -102,6 +102,37 @@ else console.log("Sorry, the day value is wrong")
 8.1 - Користувач вводить порядковий номер дня тижня і на екрані відображається інфа що заплановано
 на цей день (можна замість плану на день, назву дня англійською).
 
+*/
+
+let dayOfWeek = prompt("Enter number of day")
+
+switch (dayOfWeek) {
+    case "1":
+        alert("Weightlifting");
+        break;
+    case "2":
+        alert("Code learning");
+        break;
+    case "3":
+        alert("English learning");
+        break;
+    case "4":
+        alert("Writing notes on programming");
+        break;
+    case "5":
+        alert("Weightlifting");
+        break;
+    case "6":
+        alert("Meeting with friends");
+        break;
+    case "7":
+        alert("Pre-competition conditioning check");
+        break;
+    default: alert("Enjoy life =)");
+}
+
+/*
+
 8.2  - Користувач вводить або має два числа.
         Потрібно знайти та вивести максимальне число з тих двох .
         Також потрібно врахувати коли введені рівні числа.
