@@ -161,7 +161,17 @@ else if (parseInt(number2) === parseInt(number1)) {
   за допомоги  оператора || буде присвоювати змінній х значення "default"
   якщо значення змінної х являється falsy (хибноподібні, тобто приводиться до false)
 
+*/
+let y = "true";
 
+if (y === false || y === null || y === undefined || y === 0 || y === -1 || y === 0n || isNaN(y) || y === "") {
+    alert("y value is falsy")
+}
+else alert("y value is true")
+
+
+
+/*
 8.4  - з файлу arrays.js (лежить в папці 2023 plan ) взяти масив coursesAndDurationArray.
 За допомоги іф перевірити кожен його елемент на тривалість навчання.
 У випадку якщо тривалість довша за 5 місяців вивести в консоль "Супер".
