@@ -203,9 +203,27 @@ else alert("Is small array")
 
 
 /*
-- Маємо 3 числа і між ним  нам потрібно знайти те що посередині.
+8.6 - Маємо 3 числа і між ним  нам потрібно знайти те що посередині.
     Знайти, яке з них є середнім (більше одного, але менше за інше). Перевірити, чи знаходиться перше число між двома іншими.
 */
+
+let value1 = 7;
+let value2 = 6;
+let value3 = 6;
+
+if (value1 === value2 || value1 === value3 || value2 === value3) {
+    alert("Enter 3 different values")
+}
+else if ((value1 > value2 && value1 <value3) || ( value1 > value3 && value1 < value2)) {
+    alert(value1 + " is middle value")
+}
+else if ((value2 > value1 && value2 < value3)|| (value2 > value3 && value2 < value1)) {
+    alert(value2 + " is middle value")
+}
+else if ((value3 > value2 && value3 < value1)|| ( value3 > value1 && value3 < value2)) {
+    alert(value3 + " is middle value")
+}
+
 
 /*
 - Перепишіть конструкцію if з використанням умовного оператора '?':
