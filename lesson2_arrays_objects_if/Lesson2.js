@@ -198,8 +198,7 @@ let friends = ["Ivan", "Slavik", "Grisha", "Lera", "Ira"];
 
 if (friends.length >= 3) {
     alert("Is big array")
-}
-else alert("Is small array")
+} else alert("Is small array")
 
 
 /*
@@ -213,14 +212,11 @@ let value3 = 6;
 
 if (value1 === value2 || value1 === value3 || value2 === value3) {
     alert("Enter 3 different values")
-}
-else if ((value1 > value2 && value1 <value3) || ( value1 > value3 && value1 < value2)) {
+} else if ((value1 > value2 && value1 < value3) || (value1 > value3 && value1 < value2)) {
     alert(value1 + " is middle value")
-}
-else if ((value2 > value1 && value2 < value3)|| (value2 > value3 && value2 < value1)) {
+} else if ((value2 > value1 && value2 < value3) || (value2 > value3 && value2 < value1)) {
     alert(value2 + " is middle value")
-}
-else if ((value3 > value2 && value3 < value1)|| ( value3 > value1 && value3 < value2)) {
+} else if ((value3 > value2 && value3 < value1) || (value3 > value1 && value3 < value2)) {
     alert(value3 + " is middle value")
 }
 
@@ -267,17 +263,24 @@ alert(test ? "True" : "False")
 
 let answer = prompt("What is the official name of JavaScript?")
 
-if (answer.toLowerCase() === "ecmascript" ) {
+if (answer.toLowerCase() === "ecmascript") {
     alert("Congratulations, that's the right answer")
-}
-else alert("Wrong answer, the real name of JavaScript is ECMAScript")
+} else alert("Wrong answer, the real name of JavaScript is ECMAScript")
 
 /*
-    - У першому під'їзді квартири з 1 до 20. У другому з 21 по 48. У третьому з 49 по 90.
+   10 - У першому під'їзді квартири з 1 до 20. У другому з 21 по 48. У третьому з 49 по 90.
 Користувач вводить номер квартири просто в змінні або через prompt('') .
     Програма повинна зазначити, в якому під'їзді знаходиться дана квартира.
 */
+let entrance = parseInt(prompt("Enter the apartment number"))
 
+if (entrance > 0 && entrance < 91) {
+    if (entrance < 21) {
+        alert("1 entrance")
+    } else if (entrance > 20 && entrance < 49) {
+        alert("2 entrance")
+    } else alert("3 entrance")
+} else alert("Invalid apartment number, enter a number from 1 to 90 inclusive")
 
 /*
 - Ми маємо змінну number в яку користувач задає числове значення,  якщо змінна рівна 10 вивести повідомлення ВІРНО, якщо змінна не рівна 10 - тоді НЕВІРНО
