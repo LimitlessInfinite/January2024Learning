@@ -261,10 +261,16 @@ alert(test === true ? "True" : "False")
 alert(test ? "True" : "False")
 
 /*
-- Використовуючи конструкцію if..else, напишіть код, який запитуватиме: „Яка «офіційна» назва JavaScript?“
+9 - Використовуючи конструкцію if..else, напишіть код, який запитуватиме: „Яка «офіційна» назва JavaScript?“
 Якщо користувач вводить «ECMAScript», то показати: «Правильно!», інакше – відобразити: «Не знаєте? ECMAScript!
 */
 
+let answer = prompt("What is the official name of JavaScript?")
+
+if (answer.toLowerCase() === "ecmascript" ) {
+    alert("Congratulations, that's the right answer")
+}
+else alert("Wrong answer, the real name of JavaScript is ECMAScript")
 
 /*
     - У першому під'їзді квартири з 1 до 20. У другому з 21 по 48. У третьому з 49 по 90.
