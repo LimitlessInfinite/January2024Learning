@@ -300,7 +300,22 @@ let temperature = 17;
 alert(temperature > 9 && temperature < 23 ? "Learning offline" : "Learning online")
 
 /*
-- За допомогою switch case - реалізувати гру - вікторину, де ми вводимо число від 1 до 5. І взалежності від введеного
+13 - За допомогою switch case - реалізувати гру - вікторину, де ми вводимо число від 1 до 5. І взалежності від введеного
     числа нам дається приз. (Авто, Мото, Телефон, і т.д ) і якщо число не підходить тоді  вивести Повідомлення - що число не вірне ... .
 */
 
+let gamePrize = prompt("Enter the number from 1 to 5")
+
+switch (gamePrize) {
+    case "1": alert("Congratulations, you win Audi R8")
+        break;
+    case "2": alert("Congratulations, you win Kawasaki")
+        break;
+    case "3": alert("Congratulations, you win Iphone 15 pro max")
+        break;
+    case "4": alert("Congratulations, you win a girlfriend")
+        break;
+    case "5": alert("Congratulations, you win 1 000 000$")
+        break;
+    default: alert("Number is wrong. Enter the number form 1 to 5!")
+}
