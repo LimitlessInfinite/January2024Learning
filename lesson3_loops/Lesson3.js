@@ -79,6 +79,13 @@ for (let i = 0; i < levels.length; i++) {
         + '</div>')
 }
 // 1.3 - За допомогою циклу while вивести в документ 20 блоків h1 c довільним текстом всередині.
+document.write('<div class="separator">Task 1.3</div>')
+
+var task3 = 1;
+while (task3 <= 20) {
+    document.write('<div class="smallCard">'+'<h1 style="color: white">' + "Iteration" + task3 + '</h1>'+'</div>')
+    task3++
+}
 // 1.4 - За допомогою циклу while вивести в документ 20 блоків h1 c довільним текстом і індексом всередині.
 /*
 2 - Використовуючи данні з масиву, за допомоги document.write та циклу
