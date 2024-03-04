@@ -1,0 +1,77 @@
+body {
+    background-color: #ffffff;
+    font-family: "Noto Sans Armenian", SansSerif, sans-serif;
+    display: flex;
+    flex-wrap: wrap;
+
+}
+
+.cover {
+    display: flex;
+    position: relative;
+    width: 270px;
+    height: 350px;
+    margin: 10px;
+
+
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px 20px 20px 20px;
+    overflow: hidden;
+}
+
+.imgBlock {
+    height: 350px;
+    margin: 0;
+    overflow: hidden;
+
+}
+
+.pict {
+    position: absolute;
+    height: 270px;
+    top: 0;
+    margin: 0;
+}
+
+.description {
+    position: absolute;
+    top: 77%;
+    justify-content: center;
+    width: 270px;
+    margin: 0;
+
+}
+
+.h7 {
+    position: relative;
+    display: flex;
+    text-align: center;
+    margin: 10px;
+    font-size: 10px;
+    font-weight: bold;
+    color: white;
+}
+
+.h8 {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    color: white;
+
+}
+
+.titleDescr {
+    display: flex;
+    justify-content: center;
+}
+
+
+.backgroundCover {
+    height: 350px;
+    filter: blur(50px) brightness(40%);
+}
+
+.overflowText {
+    position: relative;
+}
