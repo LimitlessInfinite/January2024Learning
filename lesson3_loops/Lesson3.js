@@ -86,7 +86,6 @@ while (task3 <= 20) {
     document.write('<div class="smallCard">'+'<h1 style="color: white">' + "Iteration" + task3 + '</h1>'+'</div>')
     task3++
 }
-// 1.4 - За допомогою циклу while вивести в документ 20 блоків h1 c довільним текстом і індексом всередині.
 /*
 2 - Використовуючи данні з масиву, за допомоги document.write та циклу
 побудувати структуру по шаблону
@@ -106,9 +105,21 @@ let listOfItems = ['html', 'css', 'javascript', 'mysql', 'mongodb', 'react', 'an
 </ul>
 
 замість 'ITEM OF ARRAY' підставити елемент з масиву щоб получився цілий список з даними з масиву
+*/
+document.write('<div class="separator">Task 1.4</div>')
 
------------------------------------------------
 
+let listOfItems = ['html', 'css', 'javascript', 'mysql', 'mongodb', 'react', 'angular', 'node.js'];
+
+for (let i = 0; i < listOfItems.length; i++) {
+    document.write('<div class="smallCard">'+
+        '<ul>'+
+        '<li>'+ listOfItems[i] +'</li>'
+        +'</ul>'
+        +'</div>')
+
+}
+/*
 Використовуючи данні з масиву, за допомоги document.write та циклу
 побудувати структуру по шаблону
 Великими літерами прописанні властивості об'єкту які потрібно впровадити в шаблон
