@@ -3,6 +3,7 @@ body {
     font-family: "Noto Sans Armenian", SansSerif, sans-serif;
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
 
 }
 
@@ -74,4 +75,28 @@ body {
 
 .overflowText {
     position: relative;
+}
+
+.separator {
+    width: 1366px;
+    height: 70px;
+    background: teal;
+    text-align: center;
+    font-size: 50px;
+}
+
+.smallCard {
+    display: grid;
+    flex-direction: column;
+    background: brown;
+    border-radius: 20px;
+    padding: 20px;
+    margin: 10px;
+
+}
+
+.smallField {
+    display: flex;
+    flex-wrap: wrap;
+    color: white;
 }

@@ -1,8 +1,6 @@
 /*
 1.1 - За допомогою циклу for і document.write() вивести 10 блоків div c довільним текстом всередині
-1.2 - За допомогою циклу for і document.write() вивести 10 блоків div c довільним текстом і індексом всередині
-1.3 - За допомогою циклу while вивести в документ 20 блоків h1 c довільним текстом всередині.
-1.4 - За допомогою циклу while вивести в документ 20 блоків h1 c довільним текстом і індексом всередині.
+
 */
 
 let arrayPinkFloyd = [
@@ -70,9 +68,18 @@ for (let i = 0; i < arrayPinkFloyd.length; i++) {
         '<div class="description">'+'<div class="titleDescr">'+ '<h7 class="h7">' + arrayPinkFloyd[i].title + '</h7>' +'</div>' + '<div class="titleDescr">'+'<h7 class="h8">'+ arrayPinkFloyd[i].year +'</h7>'+'</div>'+'</div>' +
     '</div>');
 }
-// document.write('<div class="imgBlock">');
-// document.write('<img width="500" height="500" src="https://upload.wikimedia.org/wikipedia/ru/f/f3/PinkFloyd_PiperAtTheGatesOfDawn.jpg" alt="test">');
-// document.write('</div>');
+// 1.2 - За допомогою циклу for і document.write() вивести 10 блоків div c довільним текстом і індексом всередині
+const levels = ["Level 1","Level 2","Level 3","Level 4","Level 5","Level 6","Level 7","Level 8","Level 9","Level 10"]
+
+document.write('<div class="separator">Task 1.2</div>')
+for (let i = 0; i < levels.length; i++) {
+    document.write('<div class="smallCard">'+
+        '<div class="smallField">' +levels[i] + ' </div>' +
+        '<div class="smallField">' + "index = " + i + '</div>'
+        + '</div>')
+}
+// 1.3 - За допомогою циклу while вивести в документ 20 блоків h1 c довільним текстом всередині.
+// 1.4 - За допомогою циклу while вивести в документ 20 блоків h1 c довільним текстом і індексом всередині.
 /*
 2 - Використовуючи данні з масиву, за допомоги document.write та циклу
 побудувати структуру по шаблону
