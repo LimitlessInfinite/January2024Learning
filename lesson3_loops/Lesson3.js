@@ -277,7 +277,7 @@ for (let i = 0; i < users.length; i++) {
 
 */
 
-document.write('<div class="separator">Task 5</div>')
+document.write('<div class="separator">Task 5 console</div>')
 
 const intArr = [1,2,3,4,5];
 const stringArr = ["Hello"," world!"," I"," love"," javascript"];
@@ -299,7 +299,21 @@ for (let i = 0; i < mixArr.length; i++) {
 
 6 -- Створити пустий масив. Наповнити його будь-якими значеннями звертаючись до конкретного індексу. Вивести в консоль
 
+*/
 
+document.write('<div class="separator">Task 6 console</div>')
+
+let emptyArr = [];
+
+for (let i = 0; i < 5; i++) {
+    emptyArr[i] = i*10;
+}
+
+for (let i = 0; i < emptyArr.length; i++) {
+    console.log(emptyArr[i])
+}
+
+/*
 
 
 7 - є масив [2,17,13,6,22,31,45,66,100,-18] :
