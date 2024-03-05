@@ -400,21 +400,131 @@ for (let i = testArr.length-1; i > 0; i--) {
     testArr[i] % 2 === 0 ? console.log(testArr[i]) : ''
 }
 
+
+// 8.1- Створити масив з 10 числових елементів. Вивести в консоль всі його елементи в циклі.
+
+let tenNumbers = [1,2,3,4,5,6,7,8,9,10]
+console.log("task 8.1____________________________")
+for (let i = 0; i < tenNumbers.length; i++) {
+    console.log(tenNumbers[i])
+}
+//8.2 - Створити масив з 10 строкрових елементів. Вивести в консоль всі його елементи в циклі.
+console.log("task 8.2____________________________")
+let tenStrings = ["word","word","word","word","word","word","word","word","word","word"];
+
+for (let i = 0; i < tenStrings.length; i++) {
+    console.log(tenStrings[i] + i)
+}
+
+//8.3 - Створити масив з 10 елементів будь-якого типу. Вивести в консоль всі його елементи в циклі.
+console.log("task 8.3____________________________")
+let tenMix = ["word",1,true,{field1: "empty"},false,'ch',1.5,"test",100000,null];
+
+for (let i = 0; i < tenMix.length; i++) {
+    console.log(tenMix[i])
+}
+
+//8.4 - Створити масив з 10 елементів числового, стірчкового і булевого типу. За допомогою if та typeof вивести тільки булеві елементи
+console.log("task 8.4____________________________")
+
+for (let i = 0; i < tenMix.length; i++) {
+    typeof tenMix[i] === "boolean" ? console.log(tenMix[i]) : ''
+}
+
+//8.5 - Створити масив з 10 елементів числового, стірчкового і булевого типу. За допомогою if та typeof вивести тільки числові елементи
+console.log("task 8.5____________________________")
+
+for (let i = 0; i < tenMix.length; i++) {
+    typeof tenMix[i] === "number" ? console.log(tenMix[i]) : ''
+}
+
+//8.6 - Створити масив з 10 елементів числового, стрічкового і булевого типу. За допомогою if та typeof вивести тільки рядкові елементи
+console.log("task 8.6____________________________")
+
+for (let i = 0; i < tenMix.length; i++) {
+    typeof tenMix[i] === "string" ? console.log(tenMix[i]) : ''
+}
+
+//8.7 - Створити порожній масив. Наповнити його 10 елементами (різними за типами) через звернення до конкретних індексів. Вивести в консоль всі його елементи в циклі.
+
+console.log("task 8.7____________________________")
+
+let emptyTenMix = []
+
+for (let i = 0; i < 10; i+=3) {
+    emptyTenMix[i] = i+1
+}
+for (let j = 1; j < 10; j+=3) {
+    emptyTenMix[j] = true;
+}
+iterator = 0
+for (let k = 2; k < 10; k+=3) {
+    emptyTenMix[k] = "word" + ++iterator
+}
+for (let i = 0; i < emptyTenMix.length; i++) {
+    console.log(emptyTenMix[i])
+}
+
+//8.8 - Створити цикл for на 10  ітерацій з кроком 1. Вивести поточний номер кроку через console.log та document.write
+
+console.log("task 8.8____________________________")
+document.write('<div class="separator">Task 8.8</div>')
+
+for (let i = 0; i < tenMix.length; i++) {
+    document.write('<div class="smallCard">'+
+        '<h3 class="smallField">'+ tenMix[i] +'</h3>'
+        +'</div>')
+    console.log(tenMix[i])
+}
+
+//8.9 - Створити цикл for на 100 ітерацій з кроком 1. Вивести поточний номер кроку через console.log та document.write
+console.log("task 8.9____________________________")
+document.write('<div class="separator">Task 8.9</div>')
+
+
+for (let i = 1; i <= 100; i++) {
+    document.write('<div class="smallCard">'+
+        '<h3 class="smallField">'+ "Iteration: "+ i +'</h3>'
+        +'</div>')
+    console.log("Iteration: " + i)
+}
+// 9.1 - Створити цикл for на 100 ітерацій з кроком 2. Вивести поточний номер кроку через console.log та document.write
+console.log("Task 9.1________________________")
+document.write('<div class="separator">Task 9.1</div>');
+
+for (let i = 1; i <= 100; i+=2) {
+    document.write('<div class="smallCard">'+
+        '<h3 class="smallField">'+ "Iteration: "+ i +'</h3>'
+        +'</div>')
+    console.log("Iteration: " + i)
+}
+
+//9.2 - Створити цикл for на 100 ітерацій. Вивести тільки парні кроки. через console.log + document.write
+console.log("Task 9.2________________________")
+document.write('<div class="separator">Task 9.2</div>');
+
+for (let i = 0; i <= 100; i++) {
+   if (i % 2 === 0) {
+       document.write('<div class="smallCard">'+
+           '<h3 class="smallField">'+ "Iteration: "+ i +'</h3>'
+           +'</div>')
+       console.log("Iteration: " + i)
+   }
+}
+
+//9.3 - Створити цикл for на 100 ітерацій. Вивести тільки непарні кроки. через console.log + document.write
+console.log("Task 9.3________________________")
+document.write('<div class="separator">Task 9.3</div>');
+
+for (let i = 0; i <= 100; i++) {
+    if (i % 2 !== 0) {
+        document.write('<div class="smallCard">'+
+            '<h3 class="smallField">'+ "Iteration: "+ i +'</h3>'
+            +'</div>')
+        console.log("Iteration: " + i)
+    }
+}
 /*
-8- Створити масив з 10 числових елементів. Вивести в консоль всі його елементи в циклі.
-- Створити масив з 10 строкрових елементів. Вивести в консоль всі його елементи в циклі.
-- Створити масив з 10 елементів будь-якого типу. Вивести в консоль всі його елементи в циклі.
-- Створити масив з 10 елементів числового, стірчкового і булевого типу. За допомогою if та typeof вивести тільки булеві елементи
-- Створити масив з 10 елементів числового, стірчкового і булевого типу. За допомогою if та typeof вивести тільки числові елементи
-- Створити масив з 10 елементів числового, стрічкового і булевого типу. За допомогою if та typeof вивести тільки рядкові елементи
-
-- Створити порожній масив. Наповнити його 10 елементами (різними за типами) через звернення до конкретних індексів. Вивести в консоль всі його елементи в циклі.
-- Створити цикл for на 10  ітерацій з кроком 1. Вивести поточний номер кроку через console.log та document.write
-- Створити цикл for на 100 ітерацій з кроком 1. Вивести поточний номер кроку через console.log та document.write
-- Створити цикл for на 100 ітерацій з кроком 2. Вивести поточний номер кроку через console.log та document.write
-- Створити цикл for на 100 ітерацій. Вивести тільки парні кроки. через console.log + document.write
-- Створити цикл for на 100 ітерацій. Вивести тільки непарні кроки. через console.log + document.write
-
 
 
 стоврити масив книжок (назва, кількість сторінок, автори , жанри).
