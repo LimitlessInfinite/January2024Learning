@@ -212,6 +212,62 @@ let users = [
  - користувачів зі статусом false
  - користувачів які старші за 30 років
 
+*/
+let users = [
+    {name: 'vasya', age: 31, status: false},
+    {name: 'petya', age: 30, status: true},
+    {name: 'kolya', age: 29, status: true},
+    {name: 'olya', age: 28, status: false},
+    {name: 'max', age: 30, status: true},
+    {name: 'anya', age: 31, status: false},
+    {name: 'oleg', age: 28, status: false},
+    {name: 'andrey', age: 29, status: true},
+    {name: 'masha', age: 30, status: true},
+    {name: 'olya', age: 31, status: false},
+    {name: 'max', age: 31, status: true}
+];
+
+document.write('<div class="separator">Task 4</div>')
+
+document.write('<div style="width: 1366px; height: 70px; background-color: darkgoldenrod;text-align: center;font-size: 50px" >'+ "Users age 30+ years old" +'</div>')
+
+for (let i = 0; i < users.length; i++) {
+    if (users[i].age >= 30) {
+        document.write('<div class="smallCard">'+
+            '<div>'+'<h3 class="smallField">'+ "Name: "+ users[i].name+'</h3>'+'</div>' +
+            '<div>'+'<h3 class="smallField">'+ "Age: "+ users[i].age+'</h3>'+'</div>' +
+            '<div>'+'<h3 class="smallField">'+ "Status: "+ users[i].status+'</h3>'+'</div>'
+            +'</div>')
+    }
+}
+
+document.write('<div style="width: 1366px; height: 70px; background-color: darkgoldenrod;text-align: center;font-size: 50px" >'+ "Users with true status" +'</div>')
+
+for (let i = 0; i < users.length; i++) {
+    if (users[i].status) {
+        document.write('<div class="smallCard">'+
+            '<div class="smallField">'+'<h3>'+ "Name: "+ users[i].name+'</h3>'+'</div>' +
+            '<div class="smallField">'+'<h3>'+ "Age: "+ users[i].age+'</h3>'+'</div>' +
+            '<div class="smallField">'+'<h3>'+ "Status: "+ users[i].status+'</h3>'+'</div>'
+            +'</div>')
+    }
+}
+
+
+document.write('<div style="width: 1366px; height: 70px; background-color: darkgoldenrod;text-align: center;font-size: 50px" >'+ "Users with false status" +'</div>')
+
+for (let i = 0; i < users.length; i++) {
+    if (!users[i].status) {
+        document.write('<div class="smallCard">'+
+            '<div class="smallField">'+'<h3>'+ "Name: "+ users[i].name+'</h3>'+'</div>' +
+            '<div class="smallField">'+'<h3>'+ "Age: "+ users[i].age+'</h3>'+'</div>' +
+            '<div class="smallField">'+'<h3>'+ "Status: "+ users[i].status+'</h3>'+'</div>'
+            +'</div>')
+    }
+}
+/*
+
+
 -------------------------------------------------
 --створити масив з:
 - з 5 числових значень
