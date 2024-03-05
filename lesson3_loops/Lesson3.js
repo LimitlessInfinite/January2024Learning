@@ -5,9 +5,9 @@
 
 let arrayPinkFloyd = [
     {
-        title:"The Piper at the Gates of Dawn",
+        title: "The Piper at the Gates of Dawn",
         image: "https://upload.wikimedia.org/wikipedia/ru/f/f3/PinkFloyd_PiperAtTheGatesOfDawn.jpg",
-        year:"1967"
+        year: "1967"
     },
     {
         title: "A Saucerful of Secrets",
@@ -61,20 +61,20 @@ let arrayPinkFloyd = [
     }]
 
 for (let i = 0; i < arrayPinkFloyd.length; i++) {
-    document.write('<div class="cover"> '+
-        '<div class="imgBlock">'+
-        '<img class="backgroundCover" src="'+ arrayPinkFloyd[i].image +'" alt="descriptionBackg">'+ '</div>' +
-        '<img class="pict" src="'+ arrayPinkFloyd[i].image +'" alt="test">'+
-        '<div class="description">'+'<div class="titleDescr">'+ '<h7 class="h7">' + arrayPinkFloyd[i].title + '</h7>' +'</div>' + '<div class="titleDescr">'+'<h7 class="h8">'+ arrayPinkFloyd[i].year +'</h7>'+'</div>'+'</div>' +
-    '</div>');
+    document.write('<div class="cover"> ' +
+        '<div class="imgBlock">' +
+        '<img class="backgroundCover" src="' + arrayPinkFloyd[i].image + '" alt="descriptionBackg">' + '</div>' +
+        '<img class="pict" src="' + arrayPinkFloyd[i].image + '" alt="test">' +
+        '<div class="description">' + '<div class="titleDescr">' + '<h7 class="h7">' + arrayPinkFloyd[i].title + '</h7>' + '</div>' + '<div class="titleDescr">' + '<h7 class="h8">' + arrayPinkFloyd[i].year + '</h7>' + '</div>' + '</div>' +
+        '</div>');
 }
 // 1.2 - За допомогою циклу for і document.write() вивести 10 блоків div c довільним текстом і індексом всередині
-const levels = ["Level 1","Level 2","Level 3","Level 4","Level 5","Level 6","Level 7","Level 8","Level 9","Level 10"]
+const levels = ["Level 1", "Level 2", "Level 3", "Level 4", "Level 5", "Level 6", "Level 7", "Level 8", "Level 9", "Level 10"]
 
 document.write('<div class="separator">Task 1.2</div>')
 for (let i = 0; i < levels.length; i++) {
-    document.write('<div class="smallCard">'+
-        '<div class="smallField">' +levels[i] + ' </div>' +
+    document.write('<div class="smallCard">' +
+        '<div class="smallField">' + levels[i] + ' </div>' +
         '<div class="smallField">' + "index = " + i + '</div>'
         + '</div>')
 }
@@ -83,7 +83,7 @@ document.write('<div class="separator">Task 1.3</div>')
 
 var task3 = 1;
 while (task3 <= 20) {
-    document.write('<div class="smallCard">'+'<h1 style="color: white">' + "Iteration" + task3 + '</h1>'+'</div>')
+    document.write('<div class="smallCard">' + '<h1 style="color: white">' + "Iteration" + task3 + '</h1>' + '</div>')
     task3++
 }
 /*
@@ -112,11 +112,11 @@ document.write('<div class="separator">Task 1.4</div>')
 let listOfItems = ['html', 'css', 'javascript', 'mysql', 'mongodb', 'react', 'angular', 'node.js'];
 
 for (let i = 0; i < listOfItems.length; i++) {
-    document.write('<div class="smallCard">'+
-        '<ul>'+
-        '<li>'+ listOfItems[i] +'</li>'
-        +'</ul>'
-        +'</div>')
+    document.write('<div class="smallCard">' +
+        '<ul>' +
+        '<li>' + listOfItems[i] + '</li>'
+        + '</ul>'
+        + '</div>')
 
 }
 /*
@@ -182,12 +182,11 @@ let products = [
 ];
 
 for (let i = 0; i < products.length; i++) {
-    document.write('<div class="smallCard">'+
-        '<h3 class="smallField">'+ products[i].title +" Price = "+ products[i].price+'</h3>' +
-        '<img src="'+ products[i].image +'" alt="'+ products[i].title +'" class="smallImage">'
-        +'</div>')
+    document.write('<div class="smallCard">' +
+        '<h3 class="smallField">' + products[i].title + " Price = " + products[i].price + '</h3>' +
+        '<img src="' + products[i].image + '" alt="' + products[i].title + '" class="smallImage">'
+        + '</div>')
 }
-
 
 
 /*
@@ -229,40 +228,40 @@ let users = [
 
 document.write('<div class="separator">Task 4</div>')
 
-document.write('<div style="width: 1366px; height: 70px; background-color: darkgoldenrod;text-align: center;font-size: 50px" >'+ "Users age 30+ years old" +'</div>')
+document.write('<div style="width: 1366px; height: 70px; background-color: darkgoldenrod;text-align: center;font-size: 50px" >' + "Users age 30+ years old" + '</div>')
 
 for (let i = 0; i < users.length; i++) {
     if (users[i].age >= 30) {
-        document.write('<div class="smallCard">'+
-            '<div>'+'<h3 class="smallField">'+ "Name: "+ users[i].name+'</h3>'+'</div>' +
-            '<div>'+'<h3 class="smallField">'+ "Age: "+ users[i].age+'</h3>'+'</div>' +
-            '<div>'+'<h3 class="smallField">'+ "Status: "+ users[i].status+'</h3>'+'</div>'
-            +'</div>')
+        document.write('<div class="smallCard">' +
+            '<div>' + '<h3 class="smallField">' + "Name: " + users[i].name + '</h3>' + '</div>' +
+            '<div>' + '<h3 class="smallField">' + "Age: " + users[i].age + '</h3>' + '</div>' +
+            '<div>' + '<h3 class="smallField">' + "Status: " + users[i].status + '</h3>' + '</div>'
+            + '</div>')
     }
 }
 
-document.write('<div style="width: 1366px; height: 70px; background-color: darkgoldenrod;text-align: center;font-size: 50px" >'+ "Users with true status" +'</div>')
+document.write('<div style="width: 1366px; height: 70px; background-color: darkgoldenrod;text-align: center;font-size: 50px" >' + "Users with true status" + '</div>')
 
 for (let i = 0; i < users.length; i++) {
     if (users[i].status) {
-        document.write('<div class="smallCard">'+
-            '<div class="smallField">'+'<h3>'+ "Name: "+ users[i].name+'</h3>'+'</div>' +
-            '<div class="smallField">'+'<h3>'+ "Age: "+ users[i].age+'</h3>'+'</div>' +
-            '<div class="smallField">'+'<h3>'+ "Status: "+ users[i].status+'</h3>'+'</div>'
-            +'</div>')
+        document.write('<div class="smallCard">' +
+            '<div class="smallField">' + '<h3>' + "Name: " + users[i].name + '</h3>' + '</div>' +
+            '<div class="smallField">' + '<h3>' + "Age: " + users[i].age + '</h3>' + '</div>' +
+            '<div class="smallField">' + '<h3>' + "Status: " + users[i].status + '</h3>' + '</div>'
+            + '</div>')
     }
 }
 
 
-document.write('<div style="width: 1366px; height: 70px; background-color: darkgoldenrod;text-align: center;font-size: 50px" >'+ "Users with false status" +'</div>')
+document.write('<div style="width: 1366px; height: 70px; background-color: darkgoldenrod;text-align: center;font-size: 50px" >' + "Users with false status" + '</div>')
 
 for (let i = 0; i < users.length; i++) {
     if (!users[i].status) {
-        document.write('<div class="smallCard">'+
-            '<div class="smallField">'+'<h3>'+ "Name: "+ users[i].name+'</h3>'+'</div>' +
-            '<div class="smallField">'+'<h3>'+ "Age: "+ users[i].age+'</h3>'+'</div>' +
-            '<div class="smallField">'+'<h3>'+ "Status: "+ users[i].status+'</h3>'+'</div>'
-            +'</div>')
+        document.write('<div class="smallCard">' +
+            '<div class="smallField">' + '<h3>' + "Name: " + users[i].name + '</h3>' + '</div>' +
+            '<div class="smallField">' + '<h3>' + "Age: " + users[i].age + '</h3>' + '</div>' +
+            '<div class="smallField">' + '<h3>' + "Status: " + users[i].status + '</h3>' + '</div>'
+            + '</div>')
     }
 }
 /*
@@ -279,9 +278,9 @@ for (let i = 0; i < users.length; i++) {
 
 document.write('<div class="separator">Task 5 console</div>')
 
-const intArr = [1,2,3,4,5];
-const stringArr = ["Hello"," world!"," I"," love"," javascript"];
-const mixArr = ["String",10,true,"TestString",20];
+const intArr = [1, 2, 3, 4, 5];
+const stringArr = ["Hello", " world!", " I", " love", " javascript"];
+const mixArr = ["String", 10, true, "TestString", 20];
 
 for (let i = 0; i < intArr.length; i++) {
     console.log(intArr[i])
@@ -306,7 +305,7 @@ document.write('<div class="separator">Task 6 console</div>')
 let emptyArr = [];
 
 for (let i = 0; i < 5; i++) {
-    emptyArr[i] = i*10;
+    emptyArr[i] = i * 10;
 }
 
 for (let i = 0; i < emptyArr.length; i++) {
@@ -317,17 +316,92 @@ for (let i = 0; i < emptyArr.length; i++) {
 
 
 7 - є масив [2,17,13,6,22,31,45,66,100,-18] :
-1. перебрати його циклом while
-2. перебрати його циклом for
-3. перебрати циклом while та вивести  числа тільки з непарним індексом
-4. перебрати циклом for та вивести  числа тільки з непарним індексом
-5. перебрати циклом while та вивести  числа тільки парні  значення
-6. перебрати циклом for та вивести  числа тільки парні  значення
-7. замінити кожне число кратне 3 на слово "okten"
-8. вивести масив в зворотньому порядку.
-9. всі попередні завдання (окрім 8), але в зворотньому циклі (с заду на перед)
+1 перебрати циклом while та вивести  числа тільки з непарним індексом
+2. перебрати циклом for та вивести  числа тільки з непарним індексом
+3. перебрати циклом while та вивести  числа тільки парні  значення
+4. перебрати циклом for та вивести  числа тільки парні  значення
+5. замінити кожне число кратне 3 на слово "okten"
+6. всі попередні завдання (окрім 8), але в зворотньому циклі (с заду на перед)
 
-- Створити масив з 10 числових елементів. Вивести в консоль всі його елементи в циклі.
+*/
+document.write('<div class="separator">Task 7 console</div>')
+
+let testArr = [2, 17, 13, 6, 22, 31, 45, 66, 100, -18];
+
+console.log("Task 7.1__________________________________________")
+
+var iterator = 0;
+while (iterator < testArr.length) {
+    if (testArr[iterator] % 2 !== 0) {
+        console.log(testArr[iterator])
+    }
+    iterator += 1;
+}
+console.log("Task 7.2__________________________________________")
+
+for (let i = 0; i < testArr.length; i++) {
+    if (testArr[i] % 2 !== 0) {
+        console.log(testArr[i])
+    }
+}
+
+console.log("Task 7.3__________________________________________")
+iterator = 0;
+
+while (iterator < testArr.length) {
+    if (testArr[iterator] % 2 === 0) {
+        console.log(testArr[iterator])
+    }
+    iterator += 1;
+}
+console.log("Task 7.4__________________________________________")
+
+for (let i = 0; i < testArr.length; i++) {
+    if (testArr[i] % 2 === 0) {
+        console.log(testArr[i])
+    }
+}
+
+console.log("Task 7.5__________________________________________")
+
+for (let i = 0; i < testArr.length; i++) {
+    if (testArr[i] % 3 === 0) {
+        testArr[i] = "okten"
+        console.log(testArr[i] + "index: " + i)
+    }
+}
+
+console.log("Task 7.6___while_______________________________________")
+
+while (iterator > 0) {
+    if (testArr[iterator - 1] % 2 !== 0) {
+        console.log(testArr[iterator-1])
+    }
+    iterator--;
+}
+console.log("Task 7.6___for_______________________________________")
+
+for (let i = testArr.length - 1; i > 0; i--) {
+    if (testArr[i] % 2 !== 0) {
+        console.log(testArr[i])
+    }
+}
+console.log("Task 7.6___while_______________________________________")
+iterator = testArr.length-1;
+
+while (iterator > 0) {
+    testArr[iterator] % 2 === 0 ? console.log(testArr[iterator]) : ""
+    iterator--
+}
+
+console.log("Task 7.6___for_______________________________________")
+
+for (let i = testArr.length-1; i > 0; i--) {
+    testArr[i] % 2 === 0 ? console.log(testArr[i]) : ''
+}
+
+/*
+8- Створити масив з 10 числових елементів. Вивести в консоль всі його елементи в циклі.
 - Створити масив з 10 строкрових елементів. Вивести в консоль всі його елементи в циклі.
 - Створити масив з 10 елементів будь-якого типу. Вивести в консоль всі його елементи в циклі.
 - Створити масив з 10 елементів числового, стірчкового і булевого типу. За допомогою if та typeof вивести тільки булеві елементи
