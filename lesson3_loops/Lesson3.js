@@ -120,7 +120,7 @@ for (let i = 0; i < listOfItems.length; i++) {
 
 }
 /*
-Використовуючи данні з масиву, за допомоги document.write та циклу
+3 -Використовуючи данні з масиву, за допомоги document.write та циклу
 побудувати структуру по шаблону
 Великими літерами прописанні властивості об'єкту які потрібно впровадити в шаблон
 
@@ -154,10 +154,46 @@ for (let i = 0; i < listOfItems.length; i++) {
 </div>
 Замість TITLE PRICE IMAGE - підставити відповідні поля з об'єкту
 
+*/
+document.write('<div class="separator">Task 3</div>')
 
+
+let products = [
+    {
+        title: 'milk',
+        price: 22,
+        image: 'https://www.mcqueensdairies.co.uk/wp-content/uploads/2019/02/Mcqueens_1litre_whole_organic-300x300-3.jpg'
+    },
+    {
+        title: 'juice',
+        price: 27,
+        image: 'https://images-na.ssl-images-amazon.com/images/I/61jL2GCuKLL._SX679_PIbundle-24,TopRight,0,0_AA679SH20_.jpg'
+    },
+    {
+        title: 'tomato',
+        price: 47,
+        image: 'https://dictionary.cambridge.org/ru/images/thumb/tomato_noun_001_17860.jpg?version=5.0.74'
+    },
+    {
+        title: 'tea',
+        price: 15,
+        image: 'https://yogiproducts.com/wp-content/uploads/2009/03/YT-US-CAR-RelaxedMind-C23-202201-V2-3DFront_withGlow-300DPI-1.png'
+    },
+];
+
+for (let i = 0; i < products.length; i++) {
+    document.write('<div class="smallCard">'+
+        '<h3 class="smallField">'+ products[i].title +" Price = "+ products[i].price+'</h3>' +
+        '<img src="'+ products[i].image +'" alt="'+ products[i].title +'" class="smallImage">'
+        +'</div>')
+}
+
+
+
+/*
 
 --------------------
-є масив
+4 - є масив
 let users = [
     {name: 'vasya', age: 31, status: false},
     {name: 'petya', age: 30, status: true},
