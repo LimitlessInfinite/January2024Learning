@@ -527,12 +527,70 @@ for (let i = 0; i <= 100; i++) {
 /*
 
 
-стоврити масив книжок (назва, кількість сторінок, автори , жанри).
+10 - стоврити масив книжок (назва, кількість сторінок, автори , жанри).
 -знайти наібльшу книжку.
 - знайти книжку/ки з найбільшою кількістю жанрів
 - знайти книжку/ки з найдовшою назвою
 - знайти книжку/ки які писали 2 автори
 - знайти книжку/ки які писав 1 автор
+*/
+let books = [
+    {title: "War and Peace", pages: 1225, authors: ["Leo Tolstoy"], genres: ["Novel"]},
+    {title: "1984", pages: 328, authors: ["George Orwell"], genres: ["Dystopia"]},
+    {title: "To Kill a Mockingbird", pages: 281, authors: ["Harper Lee"], genres: ["Novel"]},
+    {title: "The Great Gatsby", pages: 180, authors: ["F. Scott Fitzgerald"], genres: ["Novel"]},
+    {title: "Lord of the Flies", pages: 224, authors: ["William Golding"], genres: ["Allegory"]},
+    {title: "Pride and Prejudice", pages: 279, authors: ["Jane Austen"], genres: ["Novel"]},
+    {title: "The Chronicles of Narnia", pages: 767, authors: ["C. S. Lewis", "Another Author"], genres: ["Fantasy"]},
+    {title: "Animal Farm", pages: 112, authors: ["George Orwell"], genres: ["Allegory"]},
+    {title: "Dune", pages: 412, authors: ["Frank Herbert"], genres: ["Science Fiction"]},
+    {title: "The Shining", pages: 447, authors: ["Stephen King"], genres: ["Horror", "Thriller"]}
+];
+
+let biggestBook = books[0];
+let manyGenres = books[0];
+let largestTitle = books[0];
+let twoAuthors = books[0];
+let oneAuthor = [books[0]]
+
+console.log("Task 10__________________________")
+
+for (let i = 1; i < books.length; i++) {
+    if (books[i].pages > biggestBook.pages) biggestBook = books[i]
+}
+console.log("Biggest book is: " + biggestBook.title + " (" + biggestBook.pages+")");
+
+for (let i = 1; i < books.length; i++) {
+    if (books[i].genres.length > manyGenres.genres.length) manyGenres = books[i];
+}
+console.log("The largest number of genres has: " + manyGenres.title + " (" + manyGenres.genres+")");
+
+for (let i = 1; i < books.length; i++) {
+    if (books[i].title.length > largestTitle.title.length) largestTitle = books[i];
+}
+console.log("The longest name has: " + largestTitle.title + " (" + largestTitle.title.length+")");
+
+for (let i = 1; i < books.length; i++) {
+    if(books[i].authors.length > twoAuthors.authors.length) twoAuthors = books[i];
+}
+console.log("The largest count of authors has: " + twoAuthors.title + " (" + twoAuthors.authors+")");
+
+for (let i = 1; i < books.length; i++) {
+    if (books[i].authors.length === oneAuthor[0].authors.length) {
+        oneAuthor[oneAuthor.length] = books[i]
+    }
+    else if (books[i].authors.length < oneAuthor[0].authors.length) {
+        oneAuthor.length = 1;
+        oneAuthor[0] = books[i]
+    }
+}
+
+console.log("Books which have no more than one author: " );
+for (let i = 0; i < oneAuthor.length; i++) {
+    console.log(i+1 + ": " + oneAuthor[i].authors)
+}
+
+/*
 ----------------------------------------------------------------------------
 1. Створити пустий масив та :
        a. заповнити його 50 парними числами за допомоги циклу.
