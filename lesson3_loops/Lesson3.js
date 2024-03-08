@@ -590,22 +590,126 @@ for (let i = 0; i < oneAuthor.length; i++) {
     console.log(i+1 + ": " + oneAuthor[i].authors)
 }
 
+
+// 11.1 - Створити пустий масив та :
+//     a. заповнити його 50 парними числами за допомоги циклу.
+console.log("Task 11.1__________________________")
+let emptyArrayTest = [];
+
+for (let i = 0; i < 50; i++) {
+if (emptyArrayTest.length < 1) {
+    emptyArrayTest[i] = 2
+}
+else emptyArrayTest[i] = emptyArrayTest[i-1] + 2;
+}
+console.log(emptyArrayTest)
+//     b. заповнити його 50 непарними числами за допомоги циклу.
+
+console.log("_______________________________")
+emptyArrayTest.length = 0;
+
+for (let i = 0; i < 50; i++) {
+    if (emptyArrayTest.length < 1) {
+        emptyArrayTest[i] = 1
+    }
+    else emptyArrayTest[i] = emptyArrayTest[i-1] + 2;
+}
+console.log(emptyArrayTest)
+
+//     c. Заповнити масив 20ма рандомними числами. (Google: Generate random number JS)
+console.log("_______________________________")
+
+emptyArrayTest.length = 0;
+
+for (let i = 0; i < 20; i++) {
+    emptyArrayTest.push(Math.floor(Math.random() * 10) + 1);
+
+}
+
+console.log(emptyArrayTest)
+// d. Заповнити масив 20ма рандомними чисалами в діапазоні від 8 до 732 (Google: Generate random number JS)
+console.log("_______________________________")
+emptyArrayTest.length = 0;
+
+for (let i = 0; i < 20; i++) {
+    emptyArrayTest.push(Math.floor(Math.random() * 732) + 8)
+}
+console.log(emptyArrayTest)
+
+
+// 11.2 - Вивести за допомогою console.log кожен третій елемен
+console.log("__11.2_____________________________")
+
+for (let i = 0; i < emptyArrayTest.length; i+=3) {
+    console.log(emptyArrayTest[i])
+}
+
+// 11.3 - Вивести за допомогою console.log кожен третій елемен тільки якщо цей елемент є парним.
+console.log("__11.3_____________________________")
+
+for (let i = 0; i < emptyArrayTest.length; i+=3) {
+    emptyArrayTest[i] % 2 === 0 ? console.log(emptyArrayTest[i]) : ''
+}
+// 11.4 - Вивести за допомогою console.log кожен третій елемен тільки якщо цей елемент є парним та записати їх в новий масив
+console.log("__11.4_____________________________")
+
+let newArr = [];
+
+for (let i = 0; i < emptyArrayTest.length; i+=3) {
+    if (emptyArrayTest[i] % 2 === 0) {
+        newArr.push(emptyArrayTest[i])
+    }
+}
+console.log(newArr)
+
+// 11.5 - Вивести кожен елемент масиву, сусід справа якого є парним
+// EXAMPLE: [ 1, 2, 3, 5, 7, 9, 56, 8, 67 ] -> Має бути виведено 1, 9, 56
+console.log("__11.5_____________________________")
+
+console.log(emptyArrayTest)
+for (let i = 0; i < emptyArrayTest.length-1; i++) {
+    if (emptyArrayTest[i + 1] % 2 === 0) {
+        console.log(emptyArrayTest[i])
+    }
+}
+
+// 11.6 - Є масив з числами [100,250,50,168,120,345,188], Які характеризують вартість окремої покупки. Обрахувати середній чек.
+console.log("__11.6_____________________________")
+
+let averageCheck = 0
+let shoppingCart = [100,250,50,168,120,345,188];
+
+for (let i = 0; i < shoppingCart.length; i++) {
+    averageCheck += shoppingCart[i]
+}
+averageCheck = Math.floor(averageCheck / shoppingCart.length)
+console.log(averageCheck)
+
+// 11.7 Створити масив з рандомними значеннями, помножити всі його елементи на 5 та перемістити їх в інший масив.
+console.log("__11.7_____________________________")
+shoppingCart.length = 0;
+
+for (let i = 0; i < emptyArrayTest.length; i++) {
+    shoppingCart.push(emptyArrayTest[i] * 5)
+}
+console.log(shoppingCart)
+
+// 11.8 Створити масив з будь якими значеннями (стрінги, числа, і тд...). пройтись по ньому, і якщо елемент є числом - додати його в інший масив.
+shoppingCart.length = 0;
+console.log("__11.8_____________________________")
+
+
+console.log(emptyTenMix)
+
+for (let i = 0; i < emptyTenMix.length; i++) {emptyArrayTest
+    typeof emptyTenMix[i] === 'number' ? shoppingCart.push(emptyTenMix[i]) : ''
+}
+console.log(shoppingCart)
 /*
 ----------------------------------------------------------------------------
-1. Створити пустий масив та :
-       a. заповнити його 50 парними числами за допомоги циклу.
-       b. заповнити його 50 непарними числами за допомоги циклу.
-       c. Заповнити масив 20ма рандомними числами. (Google: Generate random number JS)
-       d. Заповнити масив 20ма рандомними чисалами в діапазоні від 8 до 732 (Google: Generate random number JS)
- 2. Вивести за допомогою console.log кожен третій елемен
- 3. Вивести за допомогою console.log кожен третій елемен тільки якщо цей елемент є парним.
- 4. Вивести за допомогою console.log кожен третій елемен тільки якщо цей елемент є парним та записати їх в новий масив
- 5. Вивести кожен елемент масиву, сусід справа якого є парним
-  EXAMPLE: [ 1, 2, 3, 5, 7, 9, 56, 8, 67 ] -> Має бути виведено 1, 9, 56
- 6. Є масив з числами [100,250,50,168,120,345,188], Які характеризують вартість окремої покупки. Обрахувати середній чек.
 
- 7. Створити масив з рандомними значеннями, помножити всі його елементи на 5 та перемістити їх в інший масив.
- 8. Створити масив з будь якими значеннями (стрінги, числа, і тд...). пройтись по ньому, і якщо елемент є числом - додати його в інший масив.
+
+
 
 
 
