@@ -375,7 +375,7 @@ console.log("Task 7.6___while_______________________________________")
 
 while (iterator > 0) {
     if (testArr[iterator - 1] % 2 !== 0) {
-        console.log(testArr[iterator-1])
+        console.log(testArr[iterator - 1])
     }
     iterator--;
 }
@@ -387,7 +387,7 @@ for (let i = testArr.length - 1; i > 0; i--) {
     }
 }
 console.log("Task 7.6___while_______________________________________")
-iterator = testArr.length-1;
+iterator = testArr.length - 1;
 
 while (iterator > 0) {
     testArr[iterator] % 2 === 0 ? console.log(testArr[iterator]) : ""
@@ -396,21 +396,21 @@ while (iterator > 0) {
 
 console.log("Task 7.6___for_______________________________________")
 
-for (let i = testArr.length-1; i > 0; i--) {
+for (let i = testArr.length - 1; i > 0; i--) {
     testArr[i] % 2 === 0 ? console.log(testArr[i]) : ''
 }
 
 
 // 8.1- Створити масив з 10 числових елементів. Вивести в консоль всі його елементи в циклі.
 
-let tenNumbers = [1,2,3,4,5,6,7,8,9,10]
+let tenNumbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
 console.log("task 8.1____________________________")
 for (let i = 0; i < tenNumbers.length; i++) {
     console.log(tenNumbers[i])
 }
 //8.2 - Створити масив з 10 строкрових елементів. Вивести в консоль всі його елементи в циклі.
 console.log("task 8.2____________________________")
-let tenStrings = ["word","word","word","word","word","word","word","word","word","word"];
+let tenStrings = ["word", "word", "word", "word", "word", "word", "word", "word", "word", "word"];
 
 for (let i = 0; i < tenStrings.length; i++) {
     console.log(tenStrings[i] + i)
@@ -418,7 +418,7 @@ for (let i = 0; i < tenStrings.length; i++) {
 
 //8.3 - Створити масив з 10 елементів будь-якого типу. Вивести в консоль всі його елементи в циклі.
 console.log("task 8.3____________________________")
-let tenMix = ["word",1,true,{field1: "empty"},false,'ch',1.5,"test",100000,null];
+let tenMix = ["word", 1, true, {field1: "empty"}, false, 'ch', 1.5, "test", 100000, null];
 
 for (let i = 0; i < tenMix.length; i++) {
     console.log(tenMix[i])
@@ -451,14 +451,14 @@ console.log("task 8.7____________________________")
 
 let emptyTenMix = []
 
-for (let i = 0; i < 10; i+=3) {
-    emptyTenMix[i] = i+1
+for (let i = 0; i < 10; i += 3) {
+    emptyTenMix[i] = i + 1
 }
-for (let j = 1; j < 10; j+=3) {
+for (let j = 1; j < 10; j += 3) {
     emptyTenMix[j] = true;
 }
 iterator = 0
-for (let k = 2; k < 10; k+=3) {
+for (let k = 2; k < 10; k += 3) {
     emptyTenMix[k] = "word" + ++iterator
 }
 for (let i = 0; i < emptyTenMix.length; i++) {
@@ -471,9 +471,9 @@ console.log("task 8.8____________________________")
 document.write('<div class="separator">Task 8.8</div>')
 
 for (let i = 0; i < tenMix.length; i++) {
-    document.write('<div class="smallCard">'+
-        '<h3 class="smallField">'+ tenMix[i] +'</h3>'
-        +'</div>')
+    document.write('<div class="smallCard">' +
+        '<h3 class="smallField">' + tenMix[i] + '</h3>'
+        + '</div>')
     console.log(tenMix[i])
 }
 
@@ -483,19 +483,19 @@ document.write('<div class="separator">Task 8.9</div>')
 
 
 for (let i = 1; i <= 100; i++) {
-    document.write('<div class="smallCard">'+
-        '<h3 class="smallField">'+ "Iteration: "+ i +'</h3>'
-        +'</div>')
+    document.write('<div class="smallCard">' +
+        '<h3 class="smallField">' + "Iteration: " + i + '</h3>'
+        + '</div>')
     console.log("Iteration: " + i)
 }
 // 9.1 - Створити цикл for на 100 ітерацій з кроком 2. Вивести поточний номер кроку через console.log та document.write
 console.log("Task 9.1________________________")
 document.write('<div class="separator">Task 9.1</div>');
 
-for (let i = 1; i <= 100; i+=2) {
-    document.write('<div class="smallCard">'+
-        '<h3 class="smallField">'+ "Iteration: "+ i +'</h3>'
-        +'</div>')
+for (let i = 1; i <= 100; i += 2) {
+    document.write('<div class="smallCard">' +
+        '<h3 class="smallField">' + "Iteration: " + i + '</h3>'
+        + '</div>')
     console.log("Iteration: " + i)
 }
 
@@ -504,12 +504,12 @@ console.log("Task 9.2________________________")
 document.write('<div class="separator">Task 9.2</div>');
 
 for (let i = 0; i <= 100; i++) {
-   if (i % 2 === 0) {
-       document.write('<div class="smallCard">'+
-           '<h3 class="smallField">'+ "Iteration: "+ i +'</h3>'
-           +'</div>')
-       console.log("Iteration: " + i)
-   }
+    if (i % 2 === 0) {
+        document.write('<div class="smallCard">' +
+            '<h3 class="smallField">' + "Iteration: " + i + '</h3>'
+            + '</div>')
+        console.log("Iteration: " + i)
+    }
 }
 
 //9.3 - Створити цикл for на 100 ітерацій. Вивести тільки непарні кроки. через console.log + document.write
@@ -518,9 +518,9 @@ document.write('<div class="separator">Task 9.3</div>');
 
 for (let i = 0; i <= 100; i++) {
     if (i % 2 !== 0) {
-        document.write('<div class="smallCard">'+
-            '<h3 class="smallField">'+ "Iteration: "+ i +'</h3>'
-            +'</div>')
+        document.write('<div class="smallCard">' +
+            '<h3 class="smallField">' + "Iteration: " + i + '</h3>'
+            + '</div>')
         console.log("Iteration: " + i)
     }
 }
@@ -558,36 +558,35 @@ console.log("Task 10__________________________")
 for (let i = 1; i < books.length; i++) {
     if (books[i].pages > biggestBook.pages) biggestBook = books[i]
 }
-console.log("Biggest book is: " + biggestBook.title + " (" + biggestBook.pages+")");
+console.log("Biggest book is: " + biggestBook.title + " (" + biggestBook.pages + ")");
 
 for (let i = 1; i < books.length; i++) {
     if (books[i].genres.length > manyGenres.genres.length) manyGenres = books[i];
 }
-console.log("The largest number of genres has: " + manyGenres.title + " (" + manyGenres.genres+")");
+console.log("The largest number of genres has: " + manyGenres.title + " (" + manyGenres.genres + ")");
 
 for (let i = 1; i < books.length; i++) {
     if (books[i].title.length > largestTitle.title.length) largestTitle = books[i];
 }
-console.log("The longest name has: " + largestTitle.title + " (" + largestTitle.title.length+")");
+console.log("The longest name has: " + largestTitle.title + " (" + largestTitle.title.length + ")");
 
 for (let i = 1; i < books.length; i++) {
-    if(books[i].authors.length > twoAuthors.authors.length) twoAuthors = books[i];
+    if (books[i].authors.length > twoAuthors.authors.length) twoAuthors = books[i];
 }
-console.log("The largest count of authors has: " + twoAuthors.title + " (" + twoAuthors.authors+")");
+console.log("The largest count of authors has: " + twoAuthors.title + " (" + twoAuthors.authors + ")");
 
 for (let i = 1; i < books.length; i++) {
     if (books[i].authors.length === oneAuthor[0].authors.length) {
         oneAuthor[oneAuthor.length] = books[i]
-    }
-    else if (books[i].authors.length < oneAuthor[0].authors.length) {
+    } else if (books[i].authors.length < oneAuthor[0].authors.length) {
         oneAuthor.length = 1;
         oneAuthor[0] = books[i]
     }
 }
 
-console.log("Books which have no more than one author: " );
+console.log("Books which have no more than one author: ");
 for (let i = 0; i < oneAuthor.length; i++) {
-    console.log(i+1 + ": " + oneAuthor[i].authors)
+    console.log(i + 1 + ": " + oneAuthor[i].authors)
 }
 
 
@@ -597,10 +596,9 @@ console.log("Task 11.1__________________________")
 let emptyArrayTest = [];
 
 for (let i = 0; i < 50; i++) {
-if (emptyArrayTest.length < 1) {
-    emptyArrayTest[i] = 2
-}
-else emptyArrayTest[i] = emptyArrayTest[i-1] + 2;
+    if (emptyArrayTest.length < 1) {
+        emptyArrayTest[i] = 2
+    } else emptyArrayTest[i] = emptyArrayTest[i - 1] + 2;
 }
 console.log(emptyArrayTest)
 //     b. заповнити його 50 непарними числами за допомоги циклу.
@@ -611,8 +609,7 @@ emptyArrayTest.length = 0;
 for (let i = 0; i < 50; i++) {
     if (emptyArrayTest.length < 1) {
         emptyArrayTest[i] = 1
-    }
-    else emptyArrayTest[i] = emptyArrayTest[i-1] + 2;
+    } else emptyArrayTest[i] = emptyArrayTest[i - 1] + 2;
 }
 console.log(emptyArrayTest)
 
@@ -640,14 +637,14 @@ console.log(emptyArrayTest)
 // 11.2 - Вивести за допомогою console.log кожен третій елемен
 console.log("__11.2_____________________________")
 
-for (let i = 0; i < emptyArrayTest.length; i+=3) {
+for (let i = 0; i < emptyArrayTest.length; i += 3) {
     console.log(emptyArrayTest[i])
 }
 
 // 11.3 - Вивести за допомогою console.log кожен третій елемен тільки якщо цей елемент є парним.
 console.log("__11.3_____________________________")
 
-for (let i = 0; i < emptyArrayTest.length; i+=3) {
+for (let i = 0; i < emptyArrayTest.length; i += 3) {
     emptyArrayTest[i] % 2 === 0 ? console.log(emptyArrayTest[i]) : ''
 }
 // 11.4 - Вивести за допомогою console.log кожен третій елемен тільки якщо цей елемент є парним та записати їх в новий масив
@@ -655,7 +652,7 @@ console.log("__11.4_____________________________")
 
 let newArr = [];
 
-for (let i = 0; i < emptyArrayTest.length; i+=3) {
+for (let i = 0; i < emptyArrayTest.length; i += 3) {
     if (emptyArrayTest[i] % 2 === 0) {
         newArr.push(emptyArrayTest[i])
     }
@@ -667,7 +664,7 @@ console.log(newArr)
 console.log("__11.5_____________________________")
 
 console.log(emptyArrayTest)
-for (let i = 0; i < emptyArrayTest.length-1; i++) {
+for (let i = 0; i < emptyArrayTest.length - 1; i++) {
     if (emptyArrayTest[i + 1] % 2 === 0) {
         console.log(emptyArrayTest[i])
     }
@@ -677,7 +674,7 @@ for (let i = 0; i < emptyArrayTest.length-1; i++) {
 console.log("__11.6_____________________________")
 
 let averageCheck = 0
-let shoppingCart = [100,250,50,168,120,345,188];
+let shoppingCart = [100, 250, 50, 168, 120, 345, 188];
 
 for (let i = 0; i < shoppingCart.length; i++) {
     averageCheck += shoppingCart[i]
@@ -701,20 +698,15 @@ console.log("__11.8_____________________________")
 
 console.log(emptyTenMix)
 
-for (let i = 0; i < emptyTenMix.length; i++) {emptyArrayTest
+for (let i = 0; i < emptyTenMix.length; i++) {
+    emptyArrayTest
     typeof emptyTenMix[i] === 'number' ? shoppingCart.push(emptyTenMix[i]) : ''
 }
 console.log(shoppingCart)
-/*
-----------------------------------------------------------------------------
 
 
-
-
-
-
-- Дано 2 масиви з рівною кількістю об'єктів.
-Масиви:
+// 12 - Дано 2 масиви з рівною кількістю об'єктів.
+// Масиви:
 let usersWithId = [
     {id: 1, name: 'vasya', age: 31, status: false},
     {id: 2, name: 'petya', age: 30, status: true},
@@ -729,30 +721,57 @@ let citiesWithId = [
     {user_id: 4, country: 'USA', city: 'Miami'}
 ];
 
-З'єднати в один об'єкт користувача та місто з відповідними "id" та "user_id" .
-Записати цей об'єкт в новий масив
-Example:
-let usersWithCities = [
-    {
-        id: 1, // <===
-        name: 'vasya',
-        age: 31,
-        status: false,
-        address: {
-            user_id: 1, // <===
-            country: 'Ukraine',
-            city: 'Ternopil'
+let usersWithCities = []
+
+for (let i = 0; i < usersWithId.length; i++) {
+    for (let j = 0; j < citiesWithId.length; j++) {
+        if (usersWithId[i].id === citiesWithId[j].user_id) {
+            usersWithCities.push({
+                id: usersWithId[i].id,
+                name: usersWithId[i].name,
+                age: usersWithId[i].age,
+                status: usersWithId[i].status,
+                address: {
+                    user_id: citiesWithId[j].user_id,
+                    country: citiesWithId[j].country,
+                    city: citiesWithId[j].city
+                }
+            })
         }
-    },
-    // TO BE CONTINUED .....
-]
+    }
+}
+
+console.log(usersWithCities)
+//
+// З'єднати в один об'єкт користувача та місто з відповідними "id" та "user_id" .
+//     Записати цей об'єкт в новий масив
+// Example:
+//     let usersWithCities = [
+//         {
+//             id: 1, // <===
+//             name: 'vasya',
+//             age: 31,
+//             status: false,
+//             address: {
+//                 user_id: 1, // <===
+//                 country: 'Ukraine',
+//                 city: 'Ternopil'
+//             }
+//         },
+//         // TO BE CONTINUED .....
+//     ]
+//
+
+
+/*
+----------------------------------------------------------------------------
 
 
 
 
-- Взяти масив з 10 чисел або створити його. Вивести в консоль тільки ті елементи, значення яких є парними.
 
-- Взяти масив з 10 чисел або створити його. Створити 2й порожній масив. За допомогою будь-якого циклу скопіювати значення одного масиву в інший.
+
+
 
 
 - Дано масив: [ 'a', 'b', 'c'] . За допомогою циклу for зібрати всі букви в слово.
