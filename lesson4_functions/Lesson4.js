@@ -16,7 +16,16 @@ function circleArea (r) {
 }
 
 circleArea(circleRadius)
-// - створити функцію яка обчислює та повертає площу циліндру висотою h, та радіутом r
+// 3 - створити функцію яка обчислює та повертає площу циліндру висотою h, та радіутом r
+let cylinderHeight = 15;
+let cylinderRadius = 10;
+
+function cylinderArea(radius,height) {
+    console.log("Cylinder radius is: " + Math.floor(2*Math.PI*radius*(radius+height)))
+}
+
+cylinderArea(cylinderRadius,cylinderHeight)
+
 // - створити функцію яка приймає масив та виводить кожен його елемент
 // - створити функцію яка створює параграф з текстом. Текст задати через аргумент
 // - створити функцію яка створює ul з трьома елементами li. Текст li задати через аргумент всім однаковий
