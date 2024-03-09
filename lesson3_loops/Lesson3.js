@@ -765,17 +765,45 @@ console.log(usersWithCities)
 
 /*
 ----------------------------------------------------------------------------
-
-
-
-
-
-
-
-
-
+13
 - Дано масив: [ 'a', 'b', 'c'] . За допомогою циклу for зібрати всі букви в слово.
 - Дано масив: [ 'a', 'b', 'c'] . За допомогою циклу while зібрати всі букви в слово.
 - Дано масив: [ 'a', 'b', 'c'] . За допомогою циклу for of зібрати всі букви в слово.
 
  */
+console.log("__13_____________________________")
+
+let abc = ['a', 'b', 'c'];
+console.log(abc)
+
+for (let i = 1; i < abc.length; i++) {
+    abc[0] += abc[i]
+}
+abc = abc[0]
+console.log(abc)
+
+abc = ['a', 'b', 'c'];
+
+console.log("__13___while__________________________")
+
+iterator = 1;
+
+while (iterator < abc.length) {
+    abc[0] += abc[iterator]
+    iterator++
+}
+abc = abc[0]
+
+console.log(abc)
+
+abc = ['a', 'b', 'c'];
+iterator = 1;
+console.log("__13___for_of__________________________")
+
+for (let value of abc.slice(1)) {
+
+    abc[0] += value
+}
+
+abc = abc[0]
+console.log(abc)
