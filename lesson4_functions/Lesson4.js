@@ -9,6 +9,13 @@ function rectangleArea (a,b) {
 rectangleArea(sideA,sideB)
 
 // 2 - створити функцію яка обчислює та повертає площу кола з радіусом r
+let circleRadius = 33
+
+function circleArea (r) {
+    console.log("Circle area is: " + Math.floor(Math.PI * (r * r)))
+}
+
+circleArea(circleRadius)
 // - створити функцію яка обчислює та повертає площу циліндру висотою h, та радіутом r
 // - створити функцію яка приймає масив та виводить кожен його елемент
 // - створити функцію яка створює параграф з текстом. Текст задати через аргумент
