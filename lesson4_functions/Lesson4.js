@@ -80,8 +80,35 @@ function listPrimitives (array) {
 }
 
 listPrimitives(arrayPrimitives)
-// 9 - створити функцію яка приймає масив об'єктів з наступними полями id,name,age , та виводить їх в документ. Для кожного об'єкту окремий блок.
-// - створити функцію яка повертає найменьше число з масиву
+// 9 - створити функцію яка приймає масив об'єктів з наступними полями id,name,age , та виводить їх в документ.
+// Для кожного об'єкту окремий блок.
+document.write('<div class="separator">Task 9</div>')
+
+let arrayObj = [
+    {id:1,name:"Justin",age: 29},
+    {id:2,name:"Kevin",age: 33},
+    {id:3,name:"Dorian",age: 54},
+    {id:4,name:"Dexter",age: 45},
+    {id:5,name:"Ronnie",age: 52},
+    {id:6,name:"Joann",age: 27},
+    {id:7,name:"Denis",age: 48},
+]
+
+function showArrObj (array) {
+    document.write('<div>')
+    for (let i = 0; i < array.length; i++) {
+        document.write('<div>' +
+            '<h3>'+ "ID: "+ array[i].id +'</h3>' +
+            '<h3>'+ "Name: "+ array[i].name +'</h3>' +
+            '<h3>'+ "Age: "+ array[i].age +'</h3>' +
+            '</div>')
+    }
+    document.write('</div>')
+}
+
+showArrObj(arrayObj)
+
+// 10 - створити функцію яка повертає найменьше число з масиву
 // - створити функцію sum(arr)яка приймає масив чисел, сумує значення елементів масиву та повертає його. Приклад sum([1,2,10]) //->13
 // - створити функцію swap(arr,index1,index2). Функція міняє місцями заняення у відаовідних індексах
 // Приклад  swap([11,22,33,44],0,1) //=> [22,11,33,44]
